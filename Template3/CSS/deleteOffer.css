@@ -1,0 +1,57 @@
+.warpper {
+    min-height: calc(100vh - 277px);
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warpper form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 320px;
+    padding: 130px 50px 0;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.warpper form label + select {
+    padding: 5px 0 5px 25px;
+    border-radius: 16px;
+    background-color: #eee;
+    border: solid white 2px;
+    width: 100%;
+}
+
+.warpper form h2 {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.warpper form::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    top: 20%;
+    z-index: 1;
+    background-color: black;
+}
+
+form button {
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    background: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+}

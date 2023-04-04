@@ -1,0 +1,232 @@
+#container {
+    position: relative;
+    flex-wrap: wrap; /* Allows elements to start new line to take their full size
+                    50% 50% 50% without wrap will be 33% for each */
+}
+
+#container::before {
+    content: "";
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 400px; /* to bring the shadow after the picture*/
+    height:28%;
+    width: 100%;
+}
+
+#background {
+    width: 100%;
+    height: 400px;
+    background-image: url("../Img/Untitled.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Start ||  Design Header of Offer , Best Sales , Services */
+
+#container header h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 70px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.intro header p {
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+/* Draw Line */
+
+#container header h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+    height: 2px;
+}
+
+/* Draw Circle */
+
+#container header h2::after  {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 2px #333;
+    bottom: -38px;
+}
+
+
+/* End ||  Design Header of Offer , Best Sales , Services */
+
+
+/* Start || Design the container of img  */
+
+.games {
+    width: 90%;
+    height: 500px;
+    margin: 60px auto 0;
+    padding: 60px 0;
+}
+
+.gameImg{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+
+}
+
+.gameImg a {
+    border:solid rgb(255, 72, 0) 3px;
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+}
+
+.gameImg a:hover img {
+    transform: scale(1.2) rotate(2deg);
+}
+
+.gameImg img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+/* End || Design the container of img  */
+
+/* Start ||  Left or Right of Offer and Best Sales */
+
+.games i:first-of-type,.games i:last-of-type {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.games i:first-of-type {
+    left: 0;
+    color: gray;
+    font-size: 30px;
+}
+
+.games i:last-of-type {
+    right: 0;
+    color: gray;
+    font-size: 30px;    
+}
+
+/* End || Left or Right of Offer and Best Sales */
+
+/* Start || Design The container of price */
+
+.imgDisplay div {
+    position: relative;
+    height: 50px;
+    top: 0px;
+    background-color: white;
+    transition: 0.7s;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.imgDisplay:hover div {
+    top: -70px;
+}
+
+.imgDisplay div h4 {
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+}
+
+.imgDisplay div h4 del {
+    background: yellow;
+}
+
+.imgDisplay div h4 span {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    display: block;
+    position: relative;
+    top: -24px;
+}
+
+.games:first-of-type .imgDisplay::before {
+    content:attr(discount);
+    line-height: 70px;
+    width: 100%;
+    font-weight: 900;
+    font-size: 26px;
+    height: 70px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 50%);
+    position: absolute;
+    z-index: 1;
+}
+
+.games:nth-child(3) .imgDisplay div {
+    padding-left: 0px;
+}
+
+.games:nth-child(3) .imgDisplay h4{
+text-align: center;
+}
+
+/* End || Design The container of price */
+
+/* Start || SERVICES  */
+
+.intro {
+    width: 100%;
+    margin-top: 85px;
+    text-align: center;
+    position: relative;
+    padding: 60px 0;
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+    transform: translateX(-50%);
+} 
+
+#services {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services div {
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+/* End || SERVICES */

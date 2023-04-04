@@ -1,0 +1,26 @@
+#AdminWrapper  {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    min-height: calc(100vh - 277px);
+}
+
+#AdminWrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 15px;
+    height: 200px;
+    background-color: #2a2a2a;    
+    color: white;    
+    text-decoration: none;
+    width: 18%;
+}
+
+#AdminWrapper a:hover {
+    font-size: 50px;
+}

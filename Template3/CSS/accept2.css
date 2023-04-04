@@ -1,0 +1,86 @@
+#container {
+    min-height: calc(100vh - 277px);
+    background-color: #f9f9f9;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#wapper {
+    width: 600px;
+    margin: auto;
+    padding: 0 30px;
+    position: relative;
+}
+
+#wapper header {
+    margin-bottom: 60px;
+    left: -200px;
+    position: relative;
+}
+
+#wapper::after {
+    content: "";
+    width: 900px;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    left: 45%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.post:not(:last-child)  {
+        margin-bottom: 50px;
+}
+.post:not(:last-child):after  {
+    content: "";
+    width: 110%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -25px;
+    left: -10%;
+}
+
+#wapper .image {
+    width: 134px;
+    height: 250px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#wapper .image img {
+    width: 100%;
+    height: 200px;
+}
+
+#wapper .buttons {
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+#wapper .buttons a {
+    width: 40%;
+    margin-right: 5%;
+    border-radius: 16px;
+    color: white;
+    background-color: black;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+section h1 {
+    width: fit-content;
+    margin: 200px auto;
+}

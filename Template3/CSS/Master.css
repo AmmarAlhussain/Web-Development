@@ -1,0 +1,150 @@
+/* 
+    Justify-content does not work without display flex
+
+*/
+
+* {
+    box-sizing: border-box; /* to count the width of the border& padding from the total width */
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Start Header */
+.menu {
+    height: 95px;
+    text-align: center;
+    justify-content: space-between; /* take overflowed space of claas and make it as a seperator for the class elements */
+    position: relative;
+    padding: 0 40px 0 100px;
+}
+
+.menu .logo {
+    width: 5%; /* the width "as space" of the total menu*/
+}
+
+.menu .logo a img {
+width: 100px;
+}
+
+.menu ul  {
+    width: 45%;
+    justify-content: space-between; 
+}
+
+.menu , .menu ul  {
+    display: flex;
+    align-items: center;
+}
+
+.menu li  {
+    padding: 20px 0 10px;
+    list-style-type: none;
+    width: 80px;
+}
+
+.menu li a {
+    color: inherit;
+}
+
+.scale  {
+    transition: 0.3s;
+}
+
+.scale:hover {
+    transform: scale(1.3);
+}
+
+.menu li > a   {
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menu  li  i  {
+    font-size: 30px;
+}
+
+.menu li:nth-child(2)  {
+    width: 270px; /* Because trading center is too long, it needs more space */
+}
+
+
+.search  {
+    position: relative;
+}
+
+.search > input  {
+    padding: 5px 10px;
+    line-height: 1.8rem;
+    border-radius: 16px;
+    background-color: #eee;
+    position: relative;
+    right: -50px;
+    border: solid white 2px;
+}
+
+.search > i   {
+    position: relative;
+    right: -18px;
+    cursor: pointer;
+}
+
+.search a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu p  {
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 22px;
+    position: relative;
+    left: 50px;
+}
+
+/* End Header */
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+} 
+
+footer p:first-child{
+    text-transform: uppercase;
+    border-bottom:1px solid white;
+    padding: 20px;
+    font-size: 22px;
+    margin: 0px auto 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .social-icons i {
+    padding: 10px 15px;
+    transition: 0.3s;
+} 
+
+footer .social-icons i:hover {
+    transform: scale(1.2);
+} 
+
+footer p:last-child {
+    margin-top: 25px;
+}
+
+footer p:last-child  span {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.red2 {
+    text-decoration: underline;
+}

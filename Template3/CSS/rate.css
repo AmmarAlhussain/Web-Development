@@ -1,0 +1,94 @@
+section {
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 277px);
+    padding-top: 40px;
+}
+
+section header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#wapper {
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F5F5F5;
+    width: 800px;
+    height: 530px;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 4px;
+}
+
+#wapper > div:not(#text) {
+    width: calc(90% / 2);
+}
+
+#wapper img {
+    width: 260px;
+    height: 347px;
+}
+
+#wapper p {
+    font-size: 18px;
+}
+
+#stars {
+    display: flex;
+    padding-top: 125px;
+    justify-content: center;
+    position: absolute;
+    bottom: 120px;
+    left: -30px;
+}
+
+#stars i    {
+    cursor: pointer;
+    font-size: 25px;
+    height: fit-content;
+}
+
+#text {
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+
+#text textarea {
+    width: 80%;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 16px;
+    position: relative;
+    top: 5px;
+    padding: 5px;
+}
+
+#text label {
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+}
+
+section button {
+    position: relative;
+    top: -20%;
+    left: 4%;
+    text-align: center;
+    border-radius: 20px;
+    width: 15%;
+    padding: 10px;
+    color: white;
+    border: none;
+    background: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.center {
+    margin: 250px 0 0 0 ;
+    text-align: center;
+}

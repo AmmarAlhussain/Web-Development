@@ -1,0 +1,144 @@
+.container {
+    min-height: calc(100vh - 277px);
+    background-color:#f9f9f9 ;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.wapper {
+    width:80%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wapper > div:not(.stars) {
+    width: calc(95% / 3 );
+    display: flex;
+}
+
+.wapper .image {
+    align-items: center;
+    justify-content: center;
+}
+
+.wapper div img {
+    width: 260px;
+    height: 347px;
+    object-fit: cover;
+}
+
+.wapper .middle {
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.container:first-child header {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.wapper .third {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wapper .third div {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.wapper .third div h3 {
+    width: 100%;
+    height: 45px;
+    margin-left: 40px;
+}
+
+.wapper .third div p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container a {
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border: none;
+    background: #000000;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.something {
+    border: white 2px solid;
+}
+
+.wrong {
+    margin: auto;
+}
+
+.stars {
+    position: absolute;
+    left: 19%;
+    bottom: 20%;
+}
+
+.stars i {
+    font-size:23px;
+    color: rgba(12, 59, 73, 0.424);
+}
+
+#comments {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+#comments header {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 3px black solid;
+}
+
+#comments header h1 {
+    text-align: center;
+    
+}
+
+#child {
+    margin: auto;
+    width: 80%;
+    padding: 40px 70px 50px 100px;
+    min-height: 200px;
+}
+
+#child div {
+    height: fit-content;
+    margin-bottom: 20px;
+    padding: 0 40px;
+    background-color:#f1f1f1;
+    line-height: 2;
+    border-radius: 20px;
+}
+
+#child label {
+    position: relative;
+    left: 20px;
+    top: 15px;
+    font-size: 24px;
+}
+
+#child div p {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 22px;
+}
